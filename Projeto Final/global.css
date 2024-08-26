@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+    --preto: #100f10;
+    --roxo: #560d72;
+    --branco: #f2f2f2; 
+    --amarelo: #e9dd40;                     
+}
+
+header{
+    display: flex;
+    height: 4rem; /* altura do cabecalho - roxo*/
+    justify-content: space-between;
+    background-color: var(--preto); /* cor de fundo cabeçalho */
+    color: var(--branco);
+    font-weight: 500;
+    align-items: center;
+}
+
+header>h1{
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+
+header > ul > li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.link-pagina{
+    text-decoration: none;
+    color: inherit; /* elementos herde a cor do texto do seu elemento pai */
+    /*text-align: center;*/
+
+}
+
+body{
+    background-image: url("./imagens/planodefundo.jpg");
+    background-size: cover; /* Faz com que a imagem cubra todo o background */
+    background-position: center center; /* Centraliza a imagem no background */
+    background-repeat: no-repeat; /* Impede que a imagem seja repetida */
+    background-attachment: fixed; /* Opcional: Fixa a imagem ao fundo enquanto o conteúdo rola */
+    
+    
+}
+
+
+footer{   
+    display: flex;
+    background-color: var(--branco);
+    width: 100%;
+    margin-top: 30rem;
+    height: 2rem; /* altura da borda do rodape */
+    color: var(--preto);
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    
+}
+
+@media screen and (max-width: 425px){
+    
+    header > h1{
+        font-size: large;
+        margin-left: 1rem;
+    }
+
+    .link-pagina{
+        font-size: 0.9rem;
+        margin-right: 1rem;
+    }
+}

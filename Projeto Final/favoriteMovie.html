@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEU CINEMA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="favoriteMovie.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>MEU FILME FAVORITO</h1>
+        <ul>
+            <li><a href="./index.html" class="link-pagina">Página Principal</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="div-informacoes">
+            <h2 id="nome">INTERSTELLAR</h2>
+            <div>
+                <h2>ÚLTIMA VEZ QUE ASSISTI:</h2>
+                <p id="data">10/07/24</p>
+            </div>
+            <div>
+                <h2>DESCRIÇÃO:</h2>
+                <p id="descricao">
+                    a humanidade enfrenta sua extinção iminente na Terra. 
+                    Um grupo de astronautas embarca em uma missão ousada através de um buraco de minhoca, buscando um novo lar para a espécie. 
+                    Enquanto exploram mundos desconhecidos, confrontam os limites do tempo, da gravidade e do amor, desafiando suas crenças sobre o destino e a sobrevivência.
+                </p>
+            </div>
+        </div> 
+
+        <div class="div-personagens">
+            <h2>PERSONAGENS</h2>
+            <div class="cards">
+                <div class="card">
+                    <h2 id="personagem-um">Cooper</h2>
+                    <img src="./imagens/cooper-filmeum.jpg" alt="primeiro personagem" id="imagem-p1">
+                </div>
+                <div class="card">
+                    <h2 id="personagem-dois">Amelia Brand</h2>
+                    <img src="./imagens/amelia-filmeum.jpg" alt="segundo personagem" id="imagem-p2">
+                </div>
+            </div>
+        </div>
+
+        <button id="abrir-modal">Editar Filme</button>
+
+    </main>
+
+    <div id="modal" class="escondido div-modal">
+        <div>
+            <h2>Adicionar Filme</h2>
+            <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" id="novo-nome" placeholder="Nome do Filme">
+                <label for="data">Data</label>
+                <input type="text" id="nova-data" placeholder="Data em que assistiu">
+                <label for="descricao">Descrição</label>
+                <input type="text" id="nova-descricao" placeholder="Descrição do Filme">
+
+                <label for="nome-p1">Nome Personagem 1</label>
+                <input type="text" id="novo-p1" placeholder="Nome do Personagem 1">
+                <label for="imagem-p1">Imagem do Personagem 1</label>
+                <input id="nova-imagem-p1" class="input-arquivo" type="file" value="">
+
+                <label for="nome-p2">Nome Personagem 2</label>
+                <input type="text" id="novo-nome" placeholder="Nome do Personagem 2">
+                <label for="imagem-p2">Imagem do Personagem 2</label>
+                <input id="nova-imagem-p2" class="input-arquivo" type="file" value="">
+                
+                <button id="salvar">Salvar</button>
+
+            </form>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <p>
+            Desenvolvido por <b>Nikelly Thomaz</b> <i class="fa fa-solid fa-heart"></i>
+        </p>
+    </footer>
+    
+
+</body>
+</html>
+
