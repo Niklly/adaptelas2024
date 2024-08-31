@@ -1,0 +1,208 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0c4f2;
+}
+
+/* Header */
+header {
+    background-color: #590a7b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo-um {
+    flex: 1;
+}
+
+/* Navegação */
+nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    padding: 5px 10px;
+}
+
+nav > ul > li > a:hover {
+    color: rgb(196, 170, 210);
+}
+
+/* Conteúdo Principal - Bloco Um */
+.conteudo-um {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #d4a9ed;
+}
+
+.texto-um {
+    max-width: 60%;
+    flex-direction: column;
+    display: flex;
+    line-height: 1.5; /* espaçamento entre linhas */
+    text-align: justify;
+}
+
+.texto-um > h1 {
+    font-size: 48px;
+    color: #590a7b;
+    margin-bottom: 10px; /* distância do título até o parágrafo */
+    text-align: center; /* centraliza o título */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* efeito sombra no texto */
+}
+
+.texto-um > p {
+    font-size: 18px;
+    text-align: justify; /* justifica o parágrafo */
+    word-spacing: 20px; /* espaçamento entre as palavras */
+    color: #6f1291;
+    font-weight: bold;
+}
+
+.imagem-um {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Conteúdo Principal - Bloco Dois */
+.conteudo-dois {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    padding: 60px;
+}
+
+.logo-dois {
+    max-width: 180px; /* ajuste conforme necessário */
+    height: auto; /* mantém a proporção da imagem */
+}
+
+.texto-dois {
+    display: flex;
+    flex-direction: column; /* empilha o h2 e o p verticalmente */
+    text-align: justify;
+    max-width: 50%; /* limita a largura do texto */
+}
+
+.texto-dois > h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center; /* alinha o título ao meio */
+}
+
+.texto-dois > p {
+    font-size: 16px;
+    word-spacing: 12px;
+    text-align: justify; /* justifica o parágrafo */
+}
+
+/* Rodapé */
+footer {
+    background-color: #590a7b;
+    color: white;
+}
+
+.barra-inferior {
+    background-color: #d4a9ed;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #590a7b;
+}
+
+.adapti-texto {
+    color: white;
+    font-weight: bold;
+}
+
+/* Media Queries para Responsividade */
+
+/* Estilos para telas menores que 768px (tablets e dispositivos móveis) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo-um {
+        margin-bottom: 10px;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .conteudo-um {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .texto-um {
+        max-width: 100%;
+    }
+
+    .texto-um > h1 {
+        font-size: 36px;
+    }
+
+    .texto-um > p {
+        font-size: 16px;
+    }
+
+    .conteudo-dois {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo-dois {
+        max-width: 150px;
+    }
+
+    .texto-dois {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    .texto-um > h1 {
+        font-size: 28px;
+    }
+
+    .texto-um > p {
+        font-size: 14px;
+        word-spacing: 10px;
+    }
+
+    .texto-dois > h2 {
+        font-size: 20px;
+    }
+
+    .texto-dois > p {
+        font-size: 14px;
+        word-spacing: 8px;
+    }
+
+    .barra-inferior {
+        font-size: 12px;
+    }
+}
